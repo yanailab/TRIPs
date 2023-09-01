@@ -25,3 +25,5 @@ In addition there is the `origin_angle_circular_model.R` file. This is a script 
   - `outputs`: Output files from the scripts above.
   - `samples`: Actual files used within the analysis presented for the manuscript. These are frequently used as inputs in the Jupyter notebooks to aid comparison to manuscript figures.
   - `reference`: Gene annotation files.
+
+In order to make the analysis work, you **must run the initial steps of the `initial_processing.ipynb` notebook** to generate the AnnData file (`*_adata.h5ad`). This file was too large to upload directly to Github (>500 MB), so you'll need to generate it yourself. Please contact the lab if you have any issues.
