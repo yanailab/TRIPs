@@ -36,6 +36,3 @@ We have not yet fully automated the analysis pipeline. As such, there are a numb
 - UMAP chromosome bin size (see `cycle_analysis.ipynb`): The size of chromosome bins used may need to be varied based on species and data quality. We have done 100 kb for *E. coli* and 50 kb for *S. aureus, which given the differing genome sizes is ~50 bins for each chromosome. For lower quality datasets, the bin size may need to increase.
 - Angle orientation: As explained in the `cycle_analysis.ipynb`, the initial directionality of the cell angles/gene angles is arbitrary and may need to be reversed. See notebook for details.
 - Chain selection in Rstan model fit: The cyclical regression model tends to hit a lot of local minima. However, we run eight chains (eight independent fits) with the HMC sampling, allowing us to clearly identify the chains that fit correctly. See `origin_angle_circular_model.R` for details.
-
-### License
-
